@@ -22,16 +22,14 @@ To use this for any PT2399 based delay, remove the origonal "delay time" pot and
 
 This program uses either a tapped tempo, or a manual pot to set the resistance of the digital pot, in turn controlling the delay time for the PT2399 delay chip.
 
-## Operation
+## Operation Modes
 
-### Modes:
-
-#### Manual Mode
+### Manual Mode
 
 Move the pot at any time to set the delay time manually. It has a small deadband to protect against unintentionally triggering manual delay mode. 
 **Manual Delay Time set** Is indicated by a **Flashing Blue LED**
 
-#### TappTimer Active
+### TappTimer Active
 
 Tapping the footswitch once starts the TappTimer, indicated by a **Solid Blue LED** and a **Flashing Orange LED** at the currently set Tempo. <br>
 
@@ -40,12 +38,13 @@ _The digital pot will update to reflect the new delay time._
 
 If the TappTimer is started, but no 2nd tap is detected after 2 seconds, the unit will revert to its previous mode.
 
-#### SubDivision Switch
+### SubDivision Switch
 
 While TappTimer is active, the SubDivision switch sets the delay time to one of 3 different beat or tempo subdivisions.
 
 *# NOTE: Repeat Pattern assumes that TappTimer was tapped on Beats 1 and 2 for each mode, and that the first note being sampled (Designated SN:1 for Sampled Note) is played on beat 1 of the bar. Delayed notes are designated by brackets (). _
 
+#### Subdivisions Table
 | Mode | Switch Position | Note Length                    | Repeat Pattern*                                | Algorithm Used                                         |
 |---   |---              |---                             |---                                             |---                                                     |
 |Mode 1| (Switch Center) |Quarter notes, Crotchets        | (SN:1) & (2) & (3) & (4) &                     | delay time = Tap Interval                              |
