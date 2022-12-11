@@ -42,7 +42,7 @@ If the TappTimer is started, but no 2nd tap is detected after 2 seconds, the uni
 
 While TappTimer is active, the SubDivision switch sets the delay time to one of 3 different beat or tempo subdivisions.
 
-***NOTE: Repeat Pattern assumes that TappTimer was tapped on Beats 1 and 2 for each mode, and that the first note being sampled (Designated SN:1 for Sampled Note) is played on beat 1 of the bar. Delayed notes are designated by brackets ().***
+***NOTE: Repeat Pattern assumes that TappTimer was tapped on Beats 1 and 2 for each mode, and that the first note being sampled (Designated SN:1 for Sampled Note) is played on beat 1 of the bar. Echoed delay notes are designated by brackets ().***
 
 #### Subdivisions Table
 | Mode | Switch Position | Note Length                    | Repeat Pattern*                                | Algorithm Used                                         |
