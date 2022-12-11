@@ -7,13 +7,13 @@ Tap Tempo Digital Pot current control for PT2399 delay chips
 
 Written by Imogen Wren Heard 10/2018
 
-https://github.com/PanGalacticTech
-https://github.com/ImogenWren
+https://github.com/PanGalacticTech   <br>
+https://github.com/ImogenWren    <br>
 
-TapDelay PT2399 by Imogen W.H. is licensed under a
-Creative Commons Attribution-ShareAlike 4.0 International License.
-To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/4.0/.
+TapDelay PT2399 by Imogen W.H. is licensed under a     <br>
+Creative Commons Attribution-ShareAlike 4.0 Interntional License.    <br>
+To view a copy of this license, visit     <br>
+http://creativecommons.org/licenses/by-sa/4.0/.     <br>
 
 
 ## Useage
