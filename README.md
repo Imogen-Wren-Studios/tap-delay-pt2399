@@ -24,12 +24,33 @@ This program uses either a tapped tempo, or a manual pot to set the resistance o
 
 ## Operation
 
-Tapping the footswitch once starts the TappTimer, indicated by a **Solid Blue LED**. On a 2nd tap, the **Orange LED** will flash at the interval of the taps (i.e. at the tempo of the taps) and the **Blue LED* will turn off. The digital pot will update to reflect the new delay time.
+### Modes:
 
-If the TappTimer is started, but no 2nd tap is detected after 2 seconds, the unit will revert to its previous mode.
+#### Manual Mode
 
 Move the pot at any time to set the delay time manually. It has a small deadband to protect against unintentionally triggering manual delay mode. 
 **Manual Delay Time set** Is indicated by a **Flashing Blue LED**
+
+#### TappTimer Active
+
+Tapping the footswitch once starts the TappTimer, indicated by a **Solid Blue LED** and a **Flashing Orange LED** at the currently set Tempo. <br>
+
+On a 2nd tap, unit indicates new tempo with **Flashing Orange LED** and turns **Blue LED Off** 
+_The digital pot will update to reflect the new delay time._
+
+If the TappTimer is started, but no 2nd tap is detected after 2 seconds, the unit will revert to its previous mode.
+
+#### SubDivision Switch
+
+While TappTimer is active, the SubDivision switch sets the delay time to one of 3 different beat or tempo subdivisions.
+
+*# NOTE: Repeat Pattern assumes that TappTimer was tapped on Beats 1 and 2 for each mode, and that the first note being sampled (Designated SN:1 for Sampled Note) is played on beat 1 of the bar. Delayed notes are designated by brackets (). _
+
+| Mode | Switch Position | Note Length                    | Repeat Pattern*                                | Algorithm Used                                         |
+|---   |---              |---                             |---                                             |---                                                     |
+|Mode 1| (Switch Center) |Quarter notes, Crotchets        | (SN:1) & (2) & (3) & (4) &                     | delay time = Tap Interval                              |
+|Mode 2| (Switch Up)     |Dotted Quater Notes, 1 1/2 Beats| (SN:1) & 2 (&) 3 & (4) &                       | delay time = Interval + interval/2  (Or interval x 1.5)|
+|Mode 3| (Switch Down)   |Dotted 8th Notes, 3/4 of a beat | (SN:1) . & (.) 2 . (&) . 3 (.) & . (4) . & (.) | delay time = (BPM/4)\*3             (Or Interval x 0.75|                  
    
    
 ## Pin Definition & Wiring Scheme
