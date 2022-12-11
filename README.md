@@ -18,7 +18,7 @@ http://creativecommons.org/licenses/by-sa/4.0/.     <br>
 
 ## Useage
 
-To use this for any PT2399 based delay, remove the origonal "delay time" pot and solder the digital pot (wired as Reostat) in its place.
+To use this for any PT2399 based delay, remove the origonal "delay time" pot and solder the digital pot (wired as Rheostat) in its place.
 
 This program uses either a tapped tempo, or a manual pot to set the resistance of the digital pot, in turn controlling the delay time for the PT2399 delay chip.
 
